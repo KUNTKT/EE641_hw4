@@ -1,0 +1,281 @@
+{
+  "sweep": [
+    {
+      "run": "pre_lr0.001_w0_s1500",
+      "lr": 0.001,
+      "norm": "pre",
+      "warmup": 0,
+      "final_val_loss": 0.6858959555625915,
+      "trains": true,
+      "head_grad_norm_first100": 0.28606531634926796,
+      "head_grad_norm_max_first100": 1.529656171798706
+    },
+    {
+      "run": "pre_lr0.001_w500_s1500",
+      "lr": 0.001,
+      "norm": "pre",
+      "warmup": 500,
+      "final_val_loss": 0.701385548710823,
+      "trains": true,
+      "head_grad_norm_first100": 0.8522612151503564,
+      "head_grad_norm_max_first100": 1.5767797231674194
+    },
+    {
+      "run": "pre_lr0.01_w0_s1500",
+      "lr": 0.01,
+      "norm": "pre",
+      "warmup": 0,
+      "final_val_loss": 0.8088460981845855,
+      "trains": true,
+      "head_grad_norm_first100": 0.5262921795248985,
+      "head_grad_norm_max_first100": 4.751441955566406
+    },
+    {
+      "run": "pre_lr0.01_w500_s1500",
+      "lr": 0.01,
+      "norm": "pre",
+      "warmup": 500,
+      "final_val_loss": 0.6478673040866851,
+      "trains": true,
+      "head_grad_norm_first100": 0.4648387505114078,
+      "head_grad_norm_max_first100": 1.5470634698867798
+    },
+    {
+      "run": "pre_lr0.03_w0_s1500",
+      "lr": 0.03,
+      "norm": "pre",
+      "warmup": 0,
+      "final_val_loss": 1.4307053625583648,
+      "trains": true,
+      "head_grad_norm_first100": 0.6214196514338255,
+      "head_grad_norm_max_first100": 6.650558948516846
+    },
+    {
+      "run": "pre_lr0.03_w500_s1500",
+      "lr": 0.03,
+      "norm": "pre",
+      "warmup": 500,
+      "final_val_loss": 0.7573843032121659,
+      "trains": true,
+      "head_grad_norm_first100": 0.4571431009471416,
+      "head_grad_norm_max_first100": 1.529656171798706
+    },
+    {
+      "run": "post_lr0.001_w0_s1500",
+      "lr": 0.001,
+      "norm": "post",
+      "warmup": 0,
+      "final_val_loss": 0.6606260031461716,
+      "trains": true,
+      "head_grad_norm_first100": 0.3167703878879547,
+      "head_grad_norm_max_first100": 1.6245816946029663
+    },
+    {
+      "run": "post_lr0.001_w500_s1500",
+      "lr": 0.001,
+      "norm": "post",
+      "warmup": 500,
+      "final_val_loss": 0.6790206044912338,
+      "trains": true,
+      "head_grad_norm_first100": 0.7784579429030419,
+      "head_grad_norm_max_first100": 1.6686856746673584
+    },
+    {
+      "run": "post_lr0.01_w0_s1500",
+      "lr": 0.01,
+      "norm": "post",
+      "warmup": 0,
+      "final_val_loss": 3.395772922039032,
+      "trains": false,
+      "head_grad_norm_first100": 0.5224153760075569,
+      "head_grad_norm_max_first100": 6.18692684173584
+    },
+    {
+      "run": "post_lr0.01_w500_s1500",
+      "lr": 0.01,
+      "norm": "post",
+      "warmup": 500,
+      "final_val_loss": 0.7024481862783432,
+      "trains": true,
+      "head_grad_norm_first100": 0.48130719065666194,
+      "head_grad_norm_max_first100": 1.6337406635284424
+    },
+    {
+      "run": "post_lr0.03_w0_s1500",
+      "lr": 0.03,
+      "norm": "post",
+      "warmup": 0,
+      "final_val_loss": 5.099321055412292,
+      "trains": false,
+      "head_grad_norm_first100": 0.6056678314879537,
+      "head_grad_norm_max_first100": 6.136544227600098
+    },
+    {
+      "run": "post_lr0.03_w500_s1500",
+      "lr": 0.03,
+      "norm": "post",
+      "warmup": 500,
+      "final_val_loss": 1.3381734848022462,
+      "trains": true,
+      "head_grad_norm_first100": 0.511380462795496,
+      "head_grad_norm_max_first100": 1.6245816946029663
+    }
+  ],
+  "main": {
+    "run": "pre_lr0.001_w500_s4000",
+    "by_step": {
+      "step": [
+        1000,
+        2000,
+        3000,
+        4000
+      ],
+      "well_formed": [
+        0.733,
+        0.842,
+        0.883,
+        0.937
+      ],
+      "valid": [
+        0.3,
+        0.626,
+        0.726,
+        0.83
+      ],
+      "unique": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "novel": [
+        1.0,
+        0.9984025559105432,
+        0.9958677685950413,
+        0.9951807228915662
+      ]
+    },
+    "by_length": [
+      {
+        "label": "<=30",
+        "valid": 116,
+        "well_formed_invalid": 8,
+        "ill_formed": 4
+      },
+      {
+        "label": "31-36",
+        "valid": 342,
+        "well_formed_invalid": 36,
+        "ill_formed": 20
+      },
+      {
+        "label": "37-42",
+        "valid": 325,
+        "well_formed_invalid": 45,
+        "ill_formed": 32
+      },
+      {
+        "label": "43-48",
+        "valid": 47,
+        "well_formed_invalid": 17,
+        "ill_formed": 7
+      },
+      {
+        "label": ">48",
+        "valid": 0,
+        "well_formed_invalid": 1,
+        "ill_formed": 0
+      }
+    ],
+    "by_span": [
+      {
+        "label": "<=10",
+        "valid": 101,
+        "well_formed_invalid": 6,
+        "ill_formed": 4
+      },
+      {
+        "label": "11-20",
+        "valid": 211,
+        "well_formed_invalid": 25,
+        "ill_formed": 15
+      },
+      {
+        "label": "21-30",
+        "valid": 285,
+        "well_formed_invalid": 29,
+        "ill_formed": 22
+      },
+      {
+        "label": "31-40",
+        "valid": 225,
+        "well_formed_invalid": 41,
+        "ill_formed": 19
+      },
+      {
+        "label": ">40",
+        "valid": 8,
+        "well_formed_invalid": 6,
+        "ill_formed": 3
+      }
+    ],
+    "by_temperature": {
+      "0.7": {
+        "well_formed": 0.986,
+        "valid": 0.935,
+        "unique": 0.9978609625668449,
+        "novel": 0.9978563772775991
+      },
+      "1": {
+        "well_formed": 0.937,
+        "valid": 0.83,
+        "unique": 1.0,
+        "novel": 0.9951807228915662
+      },
+      "1.3": {
+        "well_formed": 0.8,
+        "valid": 0.588,
+        "unique": 1.0,
+        "novel": 1.0
+      }
+    },
+    "examples": {
+      "valid": [
+        "CCCCN(Cc1ccccc1)C(=O)c1ccc2c(c1)OCO2",
+        "CC(C)(C)OC(=O)N(Cc1ccc(Cl)cc1F)C(C)=O",
+        "COc1ccc(C2CC(=O)NC2C)cc1OC",
+        "CNC(=O)C1CCCN(C(=O)N2CCc3ccccc32)C1",
+        "COc1ccc(CNc2cc(C)ccc2C)cc1O",
+        "Cc1ccc(-n2nc(N(C)C)c(C)c2C(=O)NC2CCCC2)cc1",
+        "CC1(C(=O)NCCO)COc2ccccc2N1",
+        "Cc1ccnc(SCC(=O)N2CCC(C)CC2)n1",
+        "COc1ccc(-c2nc(Cc3ccncc3)no2)cc1",
+        "CNc1nc(SCC(=O)NC2CCCC2CC)nc(N)c1N"
+      ],
+      "well_formed_invalid": [
+        "COCC(O)c1cccc(CCCC(=O)Nc2c(C)nn(C)c2=O)c1",
+        "CC(=O)c1ccc(NC(=O)c2nc(C(F)F)c(C)n2)cc1C",
+        "COc1ccc(-c2nc(-c3ccc(-n4cncn4)c3)no2)cc1Cl",
+        "Cc1nn(-c2ccc(Cn3nc(C4CC4)sc3=O)n2)c(C#N)c1C",
+        "Cc1cc(C)c(S(=O)(=O)N(CC(C)C)C(=O)N2CCCCC2)c(=O)c1C",
+        "CC(=O)c1c[nH]c(-c2ccc(Cn3nc(C)c(=O)n3)cc2)c1",
+        "Cc1nc[nH]c(CNC(=O)c2ccc(C(=O)N3CCCC3)o2)c1C",
+        "COc1ccc(-c2cc(C(=O)Nc3cc(C(C)=O)ccc3=O)n[nH]2)cc1",
+        "CCOC(=O)c1[nH]cn(Cc2ccccc2Cl)c1C(C)=O",
+        "CC(=O)(CC(=O)N1CCc2sccc2C1)c1ccccc1"
+      ],
+      "ill_formed": [
+        "O=C(NCCc1ccncc1)C1CCCN(S(=O)(=O)oc1)C1",
+        "Cc1nnc(NC23CCN(C(=O)c4cc(O)ccc4C)CC2)s1",
+        "O=C(NC1CCCN(C(=O)C2CC3CC2)C1)c1ccncc1",
+        "O=C(Cc1cc2c(cc1F)OCCCO2)Nc1ccc2snc(C3)c2c1",
+        "Cc1cc(NC(=O)N(C)C2CC2)c(N)n1C1F",
+        "COCCNc1ncnc2c1c(=O)n(C)cn1CCc1ccccc1C2",
+        "O=C(NCc1nnc2n1CCCC(Cl)(Cl)F)Nc1ccc(F)c(F)c1",
+        "Nc1c(-c2ccc(NC(=O)C34CCC4)cc2)c(C(N)=C32CC3)cn1",
+        "Clc1ccccc1C1CN1CCN(Cc2ccncc2)CC1",
+        "COc1cccc(-c2nc3cccc(C(=O)NC4CCC4)c3c2CC(=O)N3)c1"
+      ]
+    }
+  }
+}

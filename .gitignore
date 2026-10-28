@@ -1,0 +1,14 @@
+datasets/
+__pycache__/
+*.pyc
+.pytest_cache/
+*.pth
+
+# LaTeX build artifacts
+*.aux
+*.log
+*.out
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.toc
