@@ -45,6 +45,7 @@ q3/
 ├── sample.py                 batched temperature sampling
 ├── evaluate.py               sweep summary, well-formedness, ring span, sample quality
 ├── test_interfaces.py
+├── requirements.txt          rdkit, pytest
 ├── provided/
 └── results/
     ├── training_log_*.json   12 sweep runs + pre_lr0.001_w500_s4000
@@ -59,8 +60,8 @@ report/
 
 ## Running
 
-Standard commands from the assignment; nothing differs. `rdkit` and
-`pytest` are needed for q3 (`pip install rdkit pytest`).
+Standard commands from the assignment; nothing differs. q3 needs `rdkit`
+(`pip install -r q3/requirements.txt`).
 
 ## Implementation notes
 
